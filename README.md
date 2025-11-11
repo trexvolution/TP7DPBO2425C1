@@ -1,4 +1,4 @@
-# 🃏 Pokémon Card Database (PHP Native MVC)
+# 🃏 Pokémon Card Database
 
 ## Janji
 
