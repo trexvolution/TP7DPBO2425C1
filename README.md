@@ -26,32 +26,59 @@ Program ini dibangun tanpa framework, menggunakan PHP murni, HTML, dan CSS seder
 Struktur folder proyek ini dirancang menyerupai arsitektur MVC sederhana agar rapi dan mudah dikelola:
 
 TP7DPBO2425C1/
+
 │
+
 ├─ class/               # Folder Model (akses database)
+
 │  ├─ Type.php
+
 │  ├─ Series.php
+
 │  └─ Card.php
+
 │
+
 ├─ config/              # Konfigurasi sistem
+
 │  └─ db.php            # File koneksi database (PDO)
+
 │
+
 ├─ view/                # Folder View (tampilan halaman)
+
 │  ├─ header.php
+
 │  ├─ footer.php
+
 │  ├─ type/
+
 │  │   ├─ index.php
+
 │  │   ├─ form.php
+
 │  ├─ series/
+
 │  │   ├─ index.php
+
 │  │   ├─ form.php
+
 │  └─ card/
+
 │      ├─ index.php
+
 │      ├─ form.php
+
 │
+
 ├─ database/
+
 │  └─ db_card.sql       # File SQL untuk membuat database dan tabel
+
 │
+
 ├─ style.css            # Desain tampilan halaman
+
 └─ index.php            # Entry point / Router utama
 
 ## ⚙️ Alur Program
@@ -101,15 +128,6 @@ Setiap entitas memiliki dua tampilan utama:
 
 - index.php → menampilkan daftar data & tombol aksi.
 - form.php → menampilkan form tambah/edit data.
-
-Contoh tampilan daftar type:
-
-<h2>Daftar Type</h2>
-<a href="?entity=type&action=create">+ Tambah Type</a>
-<table>
-  <tr><th>ID</th><th>Nama</th><th>Aksi</th></tr>
-  ...
-</table>
 
 4. Database (db_card.sql)
 
